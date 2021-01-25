@@ -1,0 +1,147 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.flex-container{
+  display: flex;
+}
+.flex-item{
+  background-color: #248;
+  color: white;
+  font-style:italic;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+.flex-container2{
+  display: flex;
+  /*
+  flex-flow: row wrap;
+  /*
+  flex-flow: sirve para abrebiar el flex-direcction y el flex-wrap
+  */
+  /*flex-direction: row;
+  row: se comporta como las lineas(es decir que la direccion es horizontal) colocando los items de derecha a izquierda.
+  column: se comporta como una columna(es decir que la direccion es vertical) colocando los items de arriba hacia abajo.
+  row-reverse: horizontal como row pero los items se colocan de izquierda a derecha.
+  column-reverse: vertical como column pero los items se colocan de abajo hacia arriba.
+  */
+  /*
+  flex-wrap: wrap-reverse;
+  /*
+  flex-wrap: wrap : Sirve para pocicionar las cajas sobrantes debajo cuando dejan de encajar en el container
+  es decir que respeta el tamaño de cada item y se ajusta al tamaño del container o ventana colocando los items
+  sobrantes por debajo.
+  wrap-reverse: coloca los items sobrante arriba de los demas item;
+  */
+  justify-content: space-evenly;
+  /*
+  justify-content: alinea los items del contenedor segun lo especifiques.
+  puede ser rigth, left, center, etc. (HORIZONTALMENTE).
+
+  space-between: Separa los items entre si  a la misma distancia lo mas que pueda.
+  space-around: Cumple la misma funcion que el "margin: auto;" (da el mismo margen a todos los items), pero se le da esta propiedad al contenedor.
+  space-evenly: Hace que los espacios que hay entre los items sea el mismo de inicio a fin.
+  */
+  height: 100vh;
+  /*
+  align-content: flex-start;
+  /*
+  align-items: center;
+
+
+  align-items/content:baseline --- solo se usa cuando usamos la propiedad flex-wrap: wrap-reverese. Los items se
+  colocan al final del contenedor.
+
+  align-items/content: ;---- sireve solo para alinear una linea
+  align-items/content: center --- centra los items del container de forma vertical.
+  align-items/content: end --- coloca los items al final del contenedor de forma vertical.
+  align-items/content: flex-start --- su funcion es evitar que los items se estiren por 
+  completo verticalmente si es que no se les asigna un valor a la propiedad heigth.
+  */
+
+}
+.flex-item2{
+  background-color: #548;
+  height: 120px;
+  min-width: 120px;
+  /* 
+  min-width: hace que al modificar el tamaño de la ventana del navegador y el item llegue a tener el width igual al
+  especificado en min-width las cajar se coloquen debajo (Esto sucedera si se usa el flex-wrap: wrap).
+  */
+  margin: 20px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Yusei Magic" , sans-serif;
+  padding-top: 30px;
+}
+  
+.flex-item2-4{
+  background: rgb(136, 111, 214);
+  /* *LAS SIGUIENTES PROPIEDADES CON EXCLUSIVAS DE ITEMS DE UN FLEX CONTAINER* */
+  align-self: center;
+  /*
+  * valores: center, flex-start, flex-end.
+  * Los acomoda verticalmente.
+  */
+  margin-left: auto;
+  /*
+  * El margin se comporta de manera diferente dentro de un flex. Cuando colocamos un
+  * margin-left: auto; este manda el item al lado contrario(a la derecha) lo mismo 
+  * sucede con rigth, top y bottom.
+  ? Si convinamos:
+  ?               margin-left: auto;
+  ?               margin-rigth: auto;
+  ? --> El iten se centra de forma vertical.
+  ! Lo mismo sucende si combinamos "top y bottom : auto" pero horizontalmente.
+  ! Si combinamos los 4 entonces se centra al medio de todo el container.
+  * Para hacer lo mismo de forma resumida solo se usa "margin: auto;" y se obtendra
+  * el mismo efecto.
+  ? Si queremos centrar solo horizontalmente podemos usar "margin: 0 auto"
+  ! TENER EN CUENTA QUE TODO ESTO SOLO FUNCIONA PARA LOS FLEX.
+  */
+}
+.flex-container3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.flex-item3{
+  background-color: darkcyan;
+  height: 120px;
+  min-width: 250px;
+  margin: 20px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Yusei Magic" , sans-serif;
+  padding-top: 30px;argin: 20px;
+
+  /* *LAS SIGUIENTES PROPIEDADES CON EXCLUSIVAS DE ITEMS DE UN FLEX CONTAINER* */
+  
+  flex-grow: 1;
+  /*
+  * Hace que el espacio sobrante se reparte por igual entre los items(horizontalmente).
+  * Si esta propiedad solo se le da a un item, el espacio sobrante solo se le dara a
+  * este item.
+  * El cambiar el tamaño de la ventana afecta a los items con esta propiedad.
+  ? Si queremos limitar el tamaño minimo que la caja tendra para adaptarse lo aremos
+  ? mediante "min-width: (valor deseado)".
+  ? Si ademas al container le damos la propiedad flex-wrap: wrap; sucedera que si 
+  ? el item cambia su tamaño al minimo este se ira moviendo hacia otra linea y la
+  ? caja que baja adaptara su tamaño otra vez.
+  */
+  /*
+  * flex-basis: ???px;
+  * Funciona gual en un width pero si colocamos ambas propiedades en un item
+  * este le da prioridad a "flex-basis: ;"
+  */
+  /*
+    ? flex-shrink: 1;
+    ? Se le puede dar a cada elemento por separado. Esta propiedad hace que le caja
+    ? seda parte de su espacio a las otras dependiendo del valor que le pongamos
+    ? puede ser: 1, 2 o 3. Segun lo necesitemos.
+  */
+}

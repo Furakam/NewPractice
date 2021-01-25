@@ -1,0 +1,19 @@
+{
+  "git.ignoreLimitWarning": true,
+  "editor.fontFamily": "'Cascadia Code'",
+
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [{"before":["<leader>", "k"],"commands":[":tabnext"]},
+                                          {"before":["<leader>", "j"],"commands":[":tabprevious"]},
+                                          {"before":["<leader>", "l"],"commands":[":tablast"]},
+                                          {"before":["<leader>", "h"],"commands":[":tabfirst"]},
+                                          {"before":["<leader>", "w","w"],"commands":[":w"]},
+                                          {"before":["<leader>", "w","q"],"commands":[":wq"]},
+                                          {"before":["<leader>", "q","q"],"commands":[":q"]}
+                                          ],
+                                          "editor.fontSize": 14.5,
+                                          "sync.autoUpload": true,
+                                          "editor.fontLigatures": true,
+
+}
+
