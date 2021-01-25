@@ -117,7 +117,8 @@
   text-align: center;
   font-size: 50px;
   font-family: "Yusei Magic" , sans-serif;
-  padding-top: 30px;argin: 20px;
+  padding-top: 30px;
+  margin: 20px;
 
   /* *LAS SIGUIENTES PROPIEDADES CON EXCLUSIVAS DE ITEMS DE UN FLEX CONTAINER* */
   
