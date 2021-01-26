@@ -146,3 +146,14 @@
     ? puede ser: 1, 2 o 3. Segun lo necesitemos.
   */
 }
+
+.gittext{
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px;
+  background-color: rgb(24, 46, 92);
+  color: white;
+
+}
