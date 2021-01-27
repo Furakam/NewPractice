@@ -137,6 +137,7 @@
   * flex-basis: ???px;
   * Funciona gual en un width pero si colocamos ambas propiedades en un item
   * este le da prioridad a "flex-basis: ;"
+  ! El flex-basis existe para reeplazar a la propiedad width en los flex-items.
   */
   /*
     ? flex-shrink: 1;
