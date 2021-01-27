@@ -1,0 +1,26 @@
+*{
+  font-family: "Yusei Magic", sans-serif;
+}
+.container{
+  display: flex;
+  height: 100vh;
+}
+.container__item{
+  min-width: 250px;
+  height: 250px;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  flex-grow: 1;
+}
+.container__item-1{
+  background-color: #243846;
+  flex-shrink: 3;
+}
+.container__item-2{
+  background-color: #4f7591;
+}
+.container__item-3{
+  background-color: #66a0c9;
+}
