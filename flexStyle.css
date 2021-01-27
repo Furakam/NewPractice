@@ -131,7 +131,7 @@
   ? mediante "min-width: (valor deseado)".
   ? Si ademas al container le damos la propiedad flex-wrap: wrap; sucedera que si 
   ? el item cambia su tamaño al minimo este se ira moviendo hacia otra linea y la
-  ? caja que baja adaptara su tamaño otra vez.
+  ? caja que baja adaptara su tamaño otra vez tomando el espacio sobrante para ella misma.
   */
   /*
   * flex-basis: ???px;
@@ -141,8 +141,12 @@
   /*
     ? flex-shrink: 1;
     ? Se le puede dar a cada elemento por separado. Esta propiedad hace que le caja
-    ? seda parte de su espacio a las otras dependiendo del valor que le pongamos
+    ? seda parte de su espacio a las otras dependiendo del valor que le pongamos.
+    ? En otras palabra el item con el flex-shrink: 2(o mayor, 1 = valor por defecto); , tendra el
+    ? efecto de encogerse primero lo que muestra que el item con esta propiedad esta sediendo lo 
+    ? mas que puede su espacio para que los otros item no se enconjan tan rapido.
     ? puede ser: 1, 2 o 3. Segun lo necesitemos.
+    ? Si el valor que le damos es "0", el item no se encogera.
   */
   /*
   * Si queremos abreviar flex-grow, flex-shrink y flex-basis entonces debemos utilizar la
