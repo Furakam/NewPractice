@@ -17,6 +17,17 @@
 .container__item-1{
   background-color: #243846;
   flex-shrink: 3;
+  order: 4;
+  /*
+  * order: Esta propiedad se utiliza para posicionar un item el la direccion en la que indica
+  * el main axis, es decir, que si que si el flex-direction es "row" y el valor de order es 4
+  * el item se posicionara al final de la derecha y si el flex-direction es "row-reverse" sucedera
+  * lo contrario.
+  ? Lo mismo sucede si el flex-direction es "colum" o "colum-reverse".
+  ! El valor de order puede ser cualquier numero el item con mayor valor sera el que se coloque mas
+  ! al final.
+  * (Order funciona igual que z-index pero el eje lo decide el main axis)
+  */
 }
 .container__item-2{
   background-color: #4f7591;
