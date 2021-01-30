@@ -7,18 +7,22 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: #444;
+  background: rgb(24, 117, 192);
   margin: 50px 50px;
+  width: 60%;
+  margin: 60px auto;
 }
 .img-container{
   width: 250px;
-  margin: auto; 
+  margin: auto;
   padding: 30px;
-  background-color: #fff;
+  background-color: rgb(110, 170, 204);
   border-radius: 50%;
 }
 .form-img img{
   width: 100%;
+  background-color: white;
+
 }
 .form-img{
   display: flex;
