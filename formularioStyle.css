@@ -1,6 +1,13 @@
 *{
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
+}
+body{
+  background: rgb(11, 65, 136);
+}
+.titulo{
+  display: block;
+  text-align: center;
+  font-family: "Yusei Magic", sans-serif;
 }
 .flex-container{
   display: flex;
@@ -8,21 +15,22 @@
   align-items: center;
   justify-content: center;
   background: rgb(24, 117, 192);
-  margin: 50px 50px;
   width: 60%;
   margin: 60px auto;
+  border: rgb(110, 170, 204) solid 4.5px;
+  box-shadow: rgb(44, 44, 44) 0 0 5px;
 }
 .img-container{
-  width: 250px;
+  width: 240px;
   margin: auto;
   padding: 30px;
   background-color: rgb(110, 170, 204);
   border-radius: 50%;
+  box-shadow: rgb(44, 44, 44) 0 0 10px 1px;
 }
 .form-img img{
   width: 100%;
-  background-color: white;
-
+  margin: 28px 0 28px;
 }
 .form-img{
   display: flex;
@@ -34,13 +42,28 @@
   flex: 1;
   text-align: center;
   padding: 30px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 .form__input{
   width: 100%;
   padding: 5px;
   margin: 10px 0;
   border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.form__input:focus{
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: rgb(172, 224, 255) 0 0 5px;
+}
+.form__input:hover{
+  box-shadow: rgb(172, 224, 255) 0 0 5px;
 }
 .form textarea{
   min-height: 100px;
+  resize: vertical;
 }
