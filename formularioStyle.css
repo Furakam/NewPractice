@@ -8,10 +8,12 @@ body{
   display: block;
   text-align: center;
   font-family: "Yusei Magic", sans-serif;
+  font-size: 1.4em;
+  color: white;
 }
 .flex-container{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: center;
   background: rgb(24, 117, 192);
@@ -19,6 +21,8 @@ body{
   margin: 60px auto;
   border: rgb(110, 170, 204) solid 4.5px;
   box-shadow: rgb(44, 44, 44) 0 0 5px;
+  padding-top: 10px;
+  min-width:500px
 }
 .img-container{
   width: 240px;
@@ -36,6 +40,7 @@ body{
   display: flex;
   flex: 1;
   padding: 10px;
+  min-width: 200px;
 }
 .form{
   min-width: 400px;
@@ -66,4 +71,20 @@ body{
 .form textarea{
   min-height: 100px;
   resize: vertical;
+}
+
+.form input[type="submit"]{
+  background-color: rgb(37, 81, 138);
+  color: white;
+  font-family: "Yusei Magic",sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px
+}
+.form input[type="submit"]:focus{
+  outline:none !important;
+  outline-width: 0 !important;
+  background-color: rgb(34, 71, 119);
+}
+.form input[type="submit"]:hover{
+  box-shadow: rgb(20, 78, 153) 0 0 5px;
 }

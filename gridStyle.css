@@ -1,0 +1,52 @@
+*{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 100;
+}
+
+body{
+  background:radial-gradient(circle,#fff,#bbb);
+  padding: 10px;
+}
+.grid-container{
+  display:grid;
+  grid-template-columns: repeat(3,150px) 1fr;
+  /*El repeat es un algoritmo que se usa para colocar x columnas o filas*/
+  /*
+  repeat(a,b) : repite a veces b. Es decir que si en a ponemos "2" y en b ponemps "150px 150px"
+  el resultado seran 4 filas o columnas de 150px.
+  */
+  /*Crea columnas (fr es una unidad de medida que permite al grid ajustarse al tamaño de la ventana)*/
+  grid-template-rows: repeat(3,150px);
+  /*Crea filas*/
+  border: 3px solid #000;
+  background-color: #333;
+  /*
+  grid-gap: 10px;
+  Determina el espacio que separara a las celdas entre si(no del borde)*/
+  /*
+  *grid-row-gap: Separa las filas entre si.
+  *grid-column-gap: Separa las columnas entre si.
+  */
+  grid-auto-rows: 150px;
+  /*Programa o define el tamaño de los grid-items sobrantes y que no estan definidos*/
+  /*
+    Si queremos que se comporte como columna entonces usaremos
+    grid-auto-flow: colum;
+    y en ves de grid-auto-rows usaremos grid-auto-columns: 150px;
+    grid-auto-flow: dense --> Sirve para rellenar los huecos entre grids-items.
+  */
+}
+.grid-item{
+  border: 2px solid #000;
+  background-color: #999;
+}
+
+.grid-item:first-child{/*Es una forma de seleccionar el primer elemento*/
+  background:#900;
+  grid-column: 1/ span 2;/*El span es como decir que apartir de la columna 1 ocupe 2 columnas*/
+  grid-row: 1/ span 2;/*El span es como decir que apartir de la fila 1 ocupe 2 filas*/
+}
+.grid-item:nth-child(2){
+  background:#090;
+  grid-column: 3/ span 2;
+}
