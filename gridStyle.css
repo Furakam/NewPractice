@@ -41,12 +41,12 @@ body{
   background-color: #999;
 }
 
-.grid-item:first-child{/*Es una forma de seleccionar el primer elemento*/
+.grid-item:first-child{/*Es una forma de seleccionar el primer elemento pero no es recomendable*/
   background:#900;
   grid-column: 1/ span 2;/*El span es como decir que apartir de la columna 1 ocupe 2 columnas*/
   grid-row: 1/ span 2;/*El span es como decir que apartir de la fila 1 ocupe 2 filas*/
 }
-.grid-item:nth-child(2){
+.grid-item:nth-child(2){/*Es la forma recomendable de seleccionar un elemento en especifico*/
   background:#090;
   grid-column: 3/ span 2;
 }
